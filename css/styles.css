@@ -1,0 +1,309 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'DM Sans', sans-serif;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --coral: #FF7F50;
+    --just-white: #FFFFFF;
+    --h1: rgb(0, 0, 255);
+    --h2: rgb(139, 36, 36);
+    --h3: rgb(96, 84, 84);
+    --p: rgb(28, 28, 189);
+    --borde1: rgb(255, 100, 10);
+    --borde2: rgb(10, 100, 255);
+    --nosotros-gradient: linear-gradient(to top, #869e9f, #839b9c, #819899, #7e9697, #7c9394, #7c9394, #7c9394, #7c9394, #7e9697, #819899, #839b9c, #869e9f);
+    --obras-gradient: linear-gradient(to bottom, #869f97, #829f96, #7e9f95, #7a9f93, #769f92, #769f92, #769f92, #769f92, #7a9f93, #7e9f95, #829f96, #869f97);
+    --footer-gradient: linear-gradient(to bottom, #94f0f4, #8df2e5, #91f2d2, #9ef1bb, #b2eea3, #b5ee9a, #b9ed91, #beec88, #adf08d, #98f494, #80f89d, #5ffba9);
+    --size-500:500;
+	--size-700:700;
+}
+
+header {
+    display: flex;
+    width: 100%;
+    height: 150px;
+    background: linear-gradient(207.8deg, #615950 16.69%, #FF7F50 100%);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+header section {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-logo {
+    flex-grow: initial;
+}
+
+.header-nav-container ul {
+    font-size: 1.5rem;
+    font-weight: var(--size-500);
+    line-height: 1.8rem;
+    list-style: none;
+}
+
+.header-nav-container li {
+    margin: 10px 0;
+}
+
+.header-nav-container a{
+    text-decoration: none;
+    color: var(--just-white);
+}
+
+.header-nav-container a:hover {
+    color: var(--p);
+}
+
+.header-nav-container span {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    margin-right: 15px;
+    vertical-align: text-bottom;
+}
+
+
+.icon-inicio {
+    background-image: url('../assets/icons/inicio.png');
+}
+
+.icon-nosotros {
+    background-image: url('../assets/icons/nosotros.png');
+}
+
+.icon-obras {
+    background-image: url('../assets/icons/obras.png');
+}
+
+.icon-contacto {
+    background-image: url('../assets/icons/contacto.png');
+}
+
+.home-main {
+    width: 100%;
+}
+
+.main-section-container {
+    height: 400px;
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    background-image: url('../assets/img/fondo.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main-section-container h1 {
+    display: grid;
+    grid-column: 2;
+    font-size: 4rem;
+    font-weight: 700;
+    letter-spacing: 10px;
+    color: var(--h1);
+    text-align: center;
+    text-shadow: 1px 1px 0px rgba(230, 230, 230, 1),
+    2px 2px 0px rgba(200, 200, 200, 1),
+    3px 3px 0px rgba(180, 180, 180, 1),
+    4px 4px 0px rgba(160, 160, 160, 1),
+    5px 5px 0px rgba(0, 0, 0, 1),
+    8px 8px 20px rgba(0, 0, 0, 5);
+    padding-top: 150px;
+}
+
+.main-section-container h1:hover {
+    color: var(--just-white);
+    text-shadow: 1px 1px 0px rgba(0, 0, 250, 1),
+    2px 2px 0px rgba(0, 0, 220, 1),
+    3px 3px 0px rgba(0, 0, 200, 1),
+    4px 4px 0px rgba(0, 0, 180, 1),
+    5px 5px 0px rgba(0, 0, 0, 1),
+    8px 8px 20px rgba(0, 0, 0, 5);;
+}
+
+.main-section-nosotros {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-image: var(--nosotros-gradient);
+    text-align: center;
+}
+
+.section-nosotros-texto h2 {
+    font-size: 2.4rem;
+    margin-bottom: 10px;
+    color: var(--h2);
+    padding-top: 150px;
+}
+
+.section-nosotros-texto p {
+    font-size: 1.6rem;
+    margin-bottom: 30px;
+    color: var(--p);
+}
+
+.section-nosotros-herramientas {
+    text-align: center;
+    display: grid;
+    justify-items: center;
+}
+
+.section-nosotros-herramientas h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: var(--h2);
+}
+
+.nosotros-herramientas {
+    display: inline-block;
+    max-width: 60%;
+    margin-bottom: 20px;
+}
+
+
+.nosotros-herramientas img {
+    width: 100%;
+    border: 2px solid var(--borde1);
+    box-shadow: 0px 0px 15px var(--borde1);
+    border-radius: 20px;
+}
+
+.nosotros-herramientas h3 {
+    margin-bottom: 10px;
+    font-size: 1.8rem;
+    color: var(--h3);
+}
+
+.nosotros-herramientas p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: var(--p);
+}
+
+.main-section-obras {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-image: var(--obras-gradient);
+    text-align: center;
+}
+
+.section-obras--texto h2 {
+    font-size: 2.4rem;
+    margin-bottom: 10px;
+    color: var(--h2);
+    padding-top: 150px;
+}
+
+.section-obras--texto p {
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+    color: var(--p);
+}
+
+.section-obras {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-obras-varias {
+    display: inline-block;
+    padding-left: 5px;
+    max-width: 60%;
+    margin-bottom: 15px;
+}
+
+.section-obras-varias img {
+    width: 100%;
+    border: 2px solid var(--borde2);
+    box-shadow: 0px 0px 15px var(--borde2);
+    border-radius: 20px;
+}
+
+.section-obras-varias h3 {
+    margin-bottom: 20px;
+    font-size: 1.7rem;
+    color: var(--h3);
+}
+
+footer {
+    width: 100%;
+    height: 200px;
+    bottom: 0;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    background-image: var(--footer-gradient);
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+}
+
+footer h2 {
+    font-size: 2rem;
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+    place-self: center;
+    color: var(--h2);
+}
+
+footer h2:hover {
+    font-size: 2.1rem;
+}
+
+.footer-left {
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+    font-size: 1.2rem;
+    color: var(--p);
+    justify-self: left;
+    padding-left: 5px;
+}
+
+.footer-left:hover {
+    color: var(--coral);
+    font-weight: bold;
+}
+
+.footer-right {
+    justify-self: center;
+    grid-column: 1 / 3;
+}
+
+.footer-right li a {
+    padding-left: 20px;
+}
+
+.footer-right span {
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    vertical-align: text-bottom;
+}
+
+
+.icon-instagram {
+    background-image: url('../assets/icons/instagram.png');
+}
+
+.icon-facebook {
+    background-image: url('../assets/icons/facebook.png');
+}
+
+.icon-youtube {
+    background-image: url('../assets/icons/youtube.png');
+}
